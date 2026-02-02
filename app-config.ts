@@ -21,6 +21,8 @@ export interface AppConfig {
   sandboxId?: string;
 }
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export const APP_CONFIG_DEFAULTS: AppConfig = {
   companyName: 'Home Depot',
   pageTitle: 'Asistente virtual de Home Depot',
@@ -31,9 +33,9 @@ export const APP_CONFIG_DEFAULTS: AppConfig = {
   supportsScreenShare: false,
   isPreConnectBufferEnabled: true,
 
-  logo: '/home-depot-logo.png',
+  logo: `${basePath}/home-depot-logo.png`,
   accent: '#002cf2',
-  logoDark: '/home-depot-logo.png',
+  logoDark: `${basePath}/home-depot-logo.png`,
   accentDark: '#1fd5f9',
   startButtonText: 'Iniciar llamada',
 
