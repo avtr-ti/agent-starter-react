@@ -19,15 +19,15 @@ export default async function Layout({ children }: LayoutProps) {
           className="scale-100 transition-transform duration-300 hover:scale-110"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={logo} alt={`${companyName} Logo`} className="block size-6 dark:hidden" />
+          <img src={logo} alt={`${companyName} Logo`} className="block size-16 dark:hidden" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={logoDark ?? logo}
             alt={`${companyName} Logo`}
-            className="hidden size-6 dark:block"
+            className="hidden size-16 dark:block"
           />
         </a>
-        <span className="text-foreground font-mono text-xs font-bold tracking-wider uppercase">
+        {/* <span className="text-foreground font-mono text-xs font-bold tracking-wider uppercase">
           Built with{' '}
           <a
             target="_blank"
@@ -37,7 +37,7 @@ export default async function Layout({ children }: LayoutProps) {
           >
             LiveKit Agents
           </a>
-        </span>
+        </span> */}
       </header>
 
       {children}

@@ -62,6 +62,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         {styles && <style>{styles}</style>}
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
       </head>
       <body className="overflow-x-hidden">
         <ThemeProvider
